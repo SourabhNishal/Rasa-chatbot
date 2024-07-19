@@ -1,0 +1,146 @@
+h1{
+    background-image: -webkit-linear-gradient(360deg, #005dc1 0%, #1f9c00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+p {
+margin: 0;
+}
+
+p:not(:last-child) {
+margin-bottom: 1.5em;
+}
+
+body {
+font: 1em/1.618 Inter, sans-serif;
+font-family: 'Poppins', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+
+min-height: 100vh;
+padding: 30px;
+margin: 0;
+
+color: #224;
+background:
+url('/static/bg.jpg')
+center / cover no-repeat fixed;
+}
+/* https://i.postimg.cc/SKkgrgDt/bg.jpg */
+.card {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+width: 600px;
+padding: 35px;
+
+border: 1px solid rgba(255, 255, 255, .25);
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 0.45);
+box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+backdrop-filter: blur(15px);
+}
+
+.card-footer {
+font-size: 0.65em;
+color: #446;
+}
+
+input{
+padding: 15px;
+border-radius: 30px;
+border: 1px solid #fff;
+width: 75%;
+outline: none;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+button{
+padding: 17px;
+border-radius: 30px;
+border: none;
+background: #005dc1;
+color: white;
+font-weight: 600;
+width: 24%;
+}
+
+button:hover{
+background: #016de1
+}
+
+
+.footer{
+text-align: center;
+margin-top: 0px;
+font-size: 12px;
+}
+
+.chat-box {
+background-color: #fff; 
+padding: 20px; 
+border-radius: 10px; 
+margin-bottom: 20px; 
+display: flex;
+flex-direction: column;
+
+}
+#chat-box {
+background-color: #fff; 
+padding: 20px; 
+border-radius: 10px; 
+margin-bottom: 20px; 
+display: flex;
+flex-direction: column;
+
+}
+ .user-message {
+ background-color: #e0f0ff; 
+ color: blue; 
+ padding: 10px;
+ border-radius: 8px;
+ margin-bottom: 5px;
+ text-align: right; 
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+ display: inline-block; 
+ max-width: 70%; 
+}
+
+
+.bot-message {
+background-color: #cbcbcb; 
+padding: 10px;
+border-radius: 20px;
+margin-bottom: 5px;
+align-self: flex-start;
+padding-left: 20px;
+}
+
+#start-message {
+    transition: opacity 0.5s ease-out;
+}
+
+#start-message.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+h1 {
+    color: violet;

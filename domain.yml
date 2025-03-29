@@ -1,0 +1,177 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - founder
+  - ask_courses
+  - ask_details_datascience
+  - ask_fees_datascience
+  - ask_details_python
+  - ask_fees_python
+  - ask_details_mern
+  - ask_fees_mern
+  - ask_details_testing
+  - ask_fees_testing
+  - ask_details_flutter
+  - ask_fees_flutter
+  - ask_duration_datascience
+  - ask_duration_python
+  - ask_duration_mern
+  - ask_duration_testing
+  - ask_duration_flutter
+  - ask_new_batch_datascience
+  - ask_new_batch_python
+  - ask_new_batch_mern
+  - ask_new_batch_testing
+  - ask_new_batch_flutter
+  - ask_location
+entities:
+  - course_name
+
+slots:
+  course_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course_name
+
+responses:
+  utter_greet:
+  - text: "Welcome to LuminarTechnolab. How can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_location:
+  - text: "Luminar Technolab Pvt Ltd\nGround Floor,K7 REALTY,\nJuma masjid road,\nSeaport - Airport Rd, near Opp: District Panchayat,\nKakkanad, Kochi, Kerala - 682030"
+
+
+  utter_iam_abot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_founder:
+  - text: "Rahul M Kumar"
+
+  utter_ask_courses:
+  - text: "We offer the following courses: Data Science, Python Django, Mearn stack, Testing, and Flutter."
+
+  utter_details_data_science:
+  - text: "Python is a highly popular language for data science due to its simplicity, readability, and the extensive range of libraries and tools available. A course on Python for data science typically covers various topics to equip learners with the skills needed to analyze and interpret complex data."
+
+  utter_fee_Data_Science:
+  - text: "The fee for Data Science is ₹72,000 for EMI Mode and ₹64,500 for One-time Payment Mode"
+
+  utter_details_python_Django:
+  - text: "Welcome to the Python and Django Full Stack Web Developer Bootcamp! In this course we cover everything you need to know to build a website using Python, Django, and many more web technologies!,We will teach you the latest technologies for building great web applications with Python 3 and Django! But we don't just teach that, we also teach the Front End technologies you need to know, including HTML, CSS, and Javascript. This course can be your one stop shop for everything you need! It will serve as a useful reference for many of your questions as you begin your journey in becoming a web developer!
+           This course is designed so that anyone can learn how to become a web developer. We teach you how to program by using HD Video Lectures, Walkthrough Code Projects, Exercises, Concept Presentation Slides, Downloadable Code Notes, Reading Assignments, and much more."
+
+  utter_fee_Python_Django:
+  - text: "The fee for Python django is ₹45,000 for EMI Mode and ₹39,500 for One-time Payment Mode."
+
+  utter_details_Mern_stack:
+  - text: "Mobile apps are one of the best ways to engage with users - no wonder everyone wants to build one,but wouldn't it be amazing if you could use your web development knowledge, combined with your React knowledge, to build mobile apps with that? That's exactly what React Native allows you to do.You'll learn all about the theory behind React Native, its core concepts, how to build responsive designs that work on different device sizes, how to navigate around, use maps and the camera and so much more."
+
+  utter_fee_Mern_stack:
+  - text: "The fee for Mern stack is ₹55,000 for EMI Mode and ₹49,500 for One-time Payment Mode."
+
+  utter_details_Testing:
+  - text: "Software testing is basically a method to check if the software product matches the specific requirements and ensure that it is defect-free. The main aim of software testing is to detect errors, rectify them, check for any missing requirements and fix them effectively."
+
+  utter_fee_Testing:
+  - text: "The fee for testing is ₹55,000 for EMI Mode and ₹49,500 for One-time Payment Mode."
+
+  utter_details_Flutter:
+  - text: "Welcome to the Complete Flutter App Development Bootcamp with Dart.
+
+           Now includes a brand new module on Flutter State Management!
+
+           Covering all the fundamental concepts for Flutter development, this is the most comprehensive Flutter course available online.
+
+           We built this course over months, perfecting the curriculum together with the Flutter team to teach you Flutter from scratch and make you into  a skilled Flutter developer with a strong portfolio of beautiful Flutter apps.
+
+           Our complete Flutter development bootcamp teaches you how to code using Dart and build beautiful, fast, native-quality iOS and Android apps. Even if you have ZERO programming experience."
+
+  utter_fee_Flutter:
+  - text: "The fee for flutter is ₹55,000 for EMI Mode and ₹49,500 for One-time Payment Mode."
+
+  utter_duration_Data_Science:
+  - text: "The duration of Data Science is 7 Months, 5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Python_Django:
+  - text: "The duration of Python Django is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Mern_stack:
+  - text: "The duration of Mern stack is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Testing:
+  - text: "The duration of Testing is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_duration_Flutter:
+  - text: "The duration of Flutter is 4 months,5 Days a Week, 1.5 - 2 Hours/day."
+
+  utter_new_batch_Data_Science:
+  - text: "Cochin : Aug 12th 2024 (Offline & Online)\nCalicut : Sep 18th 2024 (Offline)"
+
+  utter_new_batch_Python_Django:
+  - text: "Cochin : July 17th 2024 (Offline & Online)\nCalicut : June 17th 2024 (Offline Only)"
+
+  utter_new_batch_Mern_stack:
+  - text: "Cochin : Aug 12th 2024 (Offline & Online)\nCalicut : June 19th 2024 (Offline)"
+
+  utter_new_batch_Testing:
+  - text: "Cochin : July 17th 2024 (Offline & Online)\nCalicut : June 19th 2024 (Offline Only)"
+
+  utter_new_batch_Flutter:
+  - text: "Cochin : June 19th 2024 (Offline & Online)\nCalicut : June 19th 2024 (Offline Only)"
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_location
+  - utter_iam_abot
+  - utter_founder
+  - utter_ask_courses
+  - utter_details_data_science
+  - utter_fee_Data_Science
+  - utter_details_python_Django
+  - utter_fee_Python_Django
+  - utter_details_Mern_stack
+  - utter_fee_Mern_stack
+  - utter_details_Testing
+  - utter_fee_Testing
+  - utter_details_Flutter
+  - utter_fee_Flutter
+  - utter_duration_Data_Science
+  - utter_duration_Python_Django
+  - utter_duration_Mern_stack
+  - utter_duration_Testing
+  - utter_duration_Flutter
+  - utter_new_batch_Data_Science
+  - utter_new_batch_Python_Django
+  - utter_new_batch_Mern_stack
+  - utter_new_batch_Testing
+  - utter_new_batch_Flutter
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

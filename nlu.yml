@@ -1,0 +1,320 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: founder
+  examples: |
+    - who is the CEO?
+    - Who is the founder?
+    - Who started this company?
+    - Who founded this organization?
+    - Who is the creator?
+    - Tell me about the CEO.
+    - Can you tell me who the founder is?
+    - Do you know who founded this?
+
+- intent: ask_location
+  examples: |
+    - Where is luminar technolab located?
+    - where is it located?
+    - location of luminar technolab.
+    - give me location of luminar.
+    - location of luminar
+    - luminar technolab location.
+    - Can you tell me where it is?
+    - Where exactly is it located?
+    - Where exactly luminar technolab located?
+
+- intent: ask_courses
+  examples: |
+    - What courses do you offer?
+    - List all courses.
+    - Can you tell me about your courses?
+
+- intent: ask_details_datascience
+  examples: |
+    - data science details
+    - Can you tell me about the data science course details?
+    - what is meant by data science
+    - I want to know more about the data science course details.
+    - Give me details about the data Science course.
+    - Explain the data science course to me.
+    - What will I learn in the data science course?
+    - Provide an overview details of the data science course.
+    - What subjects are taught in the Data Science course?
+    - give a short description of data science
+
+- intent: ask_fees_datascience
+  examples: |
+    - What is the fee for Data Science?
+    - How much does Data science cost?
+    - Tell me the fees for Data Science.
+    - How much is the fee for Data Science?
+    - What is the cost of Data Science?
+
+- intent: ask_details_python
+  examples: |
+    - python django details
+    - what is the details of python?
+    - Can you tell me about the python django course details?
+    - what is meant by python django?
+    - I want to know more about the python django course.
+    - Give me details about the python django course.
+    - What is meant by python django?
+    - give a short description about python django.
+    - Explain the python course to me.
+    - Provide an overview of the python django course.
+
+- intent: ask_fees_python
+  examples: |
+    - What is the fee for Python Django?
+    - How much does python cost?
+    - Tell me the fees for Python Django.
+    - How much is the fee for Python?
+    - What is the cost of Python Django?
+
+- intent: ask_details_mern
+  examples: |
+    - mern stack details
+    - what is the details of mern?
+    - Can you tell me about the mern Stack course details?
+    - What does the mern Stack course cover?
+    - I want to know more about the mern Stack course.
+    - Give me details about the mern Stack course.
+    - What is meant by mern stack course?
+    - Explain the MERN Stack course details to me.
+    - what is mern means?.
+    - Provide an overview details of the mern course.
+    - give short description of mern?
+
+- intent: ask_fees_mern
+  examples: |
+    - What is the fee for Mern Stack?
+    - How much does Mern Stack cost?
+    - Tell me the fees for Mern Stack.
+    - How much is the fee for Mern Stack?
+    - What is the cost of Mern Stack?
+
+- intent: ask_details_testing
+  examples: |
+    - testing
+    - software testing
+    - tell me about the Software Testing course?
+    - What is the Software Testing course?
+    - I want to know more about the Software Testing course.
+    - Give me details about the Software Testing course.
+    - What is meant by Software Testing course?
+    - Explain the Software Testing course to me.
+    - what is testing means?
+    - give short description of testing.
+    - Provide an overview of the Testing course.
+
+- intent: ask_fees_testing
+  examples: |
+    - What is the fee for Software testing?
+    - How much does  Software testing cost?
+    - Tell me the fees for Software testing.
+    - How much is the fee for Software testing?
+    - What is the cost of Software testing?
+
+- intent: ask_details_flutter
+  examples: |
+     - flutter
+     - flutter course
+     - Can you tell me about the flutter course?
+     - What is the flutter course?
+     - I want to know more about the flutter course.
+     - Give me details about the flutter course.
+     - can you explain about flutter course?
+     - Explain the flutter course to me.
+     - i want to know about the flutter course?
+     - what is flutter means?
+     - give short description of flutter.
+     - Provide an overview of the flutter course.
+
+- intent: ask_fees_flutter
+  examples: |
+    - What is the fee for flutter?
+    - How much does  flutter cost?
+    - Tell me the fees for flutter.
+    - How much is the fee for flutter?
+    - What is the cost of flutter?
+
+- intent: ask_duration_datascience
+  examples: |
+   - How long does a Data science course usually take?
+    - What is the duration of a typical Data science training program?
+    - How many weeks does it take to complete a Data science course?
+    - Can you tell me the duration of a Data science programming course?
+    - How long will it take to learn Data science?
+
+- intent: ask_duration_python
+  examples: |
+    - How long does a Python course usually take?
+    - What is the duration of a typical Python Django training program?
+    - How many weeks does it take to complete a Python Django course?
+    - Can you tell me the duration of a Python Django programming course?
+    - How long will it take to learn Python Django?
+
+- intent: ask_duration_mern
+  examples: |
+    - How long does a Mern stack course usually take?
+    - What is the duration of a typical  Mern stack training program?
+    - How many weeks does it take to complete a  Mern stack course?
+    - Can you tell me the duration of a  Mern stack programming course?
+    - How long will it take to learn  Mern stack?
+
+- intent: ask_duration_testing
+  examples: |
+    - How long does a Software Testing course usually take?
+    - What is the duration of a typical   Software Testing training program?
+    - How many weeks does it take to complete a  Software Testing course?
+    - Can you tell me the duration of a  Software Testing programming course?
+    - How long will it take to learn   Software Testing?
+
+- intent: ask_duration_flutter
+  examples: |
+    - what is the duration of flutter.
+    - How long does a Flutter course usually take?
+    - What is the duration of a typical   Flutter training program?
+    - How many weeks does it take to complete a  Flutter course?
+    - Can you tell me the duration of a  Flutter programming course?
+    - How long will it take to learn   Flutter?
+
+- intent: ask_new_batch_datascience
+  examples: |
+    - When does the new  Data Science batch for  start?
+    - What is the start date for the next Data Science batch?
+    - When is the next Data Science batch beginning?
+    - Can you tell me when the new  Data Science batch will commence?
+    - What is the commencement date of the new  Data Science batch?
+    - When will the next Data Science batch of the course start?
+    - What is the starting date for the upcoming Data Science batch?
+
+- intent: ask_new_batch_python
+  examples: |
+    - When does the new Python Django batch start?
+    - What is the start date for the next Python Django batch?
+    - When is the next Python Django batch beginning?
+    - Can you tell me when the new Python Django batch will commence?
+    - What is the commencement date of the new Python Django batch?
+    - When will the next Python Django batch of the course start?
+    - What is the starting date for the upcoming Python Django batch?
+
+- intent: ask_new_batch_mern
+  examples: |
+    - When does the new Mern stack batch start?
+    - What is the start date for the next Mern stack batch?
+    - When is the next Mern stack batch beginning?
+    - Can you tell me when the new Mern stack batch will commence?
+    - What is the commencement date of the new Mern stack batch?
+    - When will the next Mern stack batch of the course start?
+    - What is the starting date for the upcoming Mern stack batch?
+
+- intent: ask_new_batch_testing
+  examples: |
+    - When does the new software testing batch start?
+    - What is the start date for the next software testing batch?
+    - When is the next software testing batch beginning?
+    - Can you tell me when the new software testing batch will commence?
+    - What is the commencement date of the new software testing batch?
+    - When will the next software testing batch of the course start?
+    - What is the starting date for the upcoming software testing batch?
+
+- intent: ask_new_batch_flutter
+  examples: |
+    - When does the new flutter batch start?
+    - What is the start date for the next flutter batch?
+    - When is the next flutter batch beginning?
+    - Can you tell me when the new flutter batch will commence?
+    - What is the commencement date of the new flutter batch?
+    - When will the next flutter batch of the course start?
+    - What is the starting date for the upcoming flutter batch?
+
